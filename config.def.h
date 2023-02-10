@@ -24,6 +24,16 @@ static const char *colors[][3]      = {
 	[SchemeSel]  = { col_gray4, col_void,  col_void },
 };
 
+static const char *const autostart[] = {
+	"pipewire", NULL,
+	"wireplumber", NULL,
+	"pipewire-pulse", NULL,
+	"slstatus", NULL,
+	"fcitx5", "-d", NULL,
+	"picom", "-b", NULL,
+	NULL /* terminate */
+};
+
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
